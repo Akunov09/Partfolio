@@ -1,0 +1,336 @@
+body{
+    background: linear-gradient(white,blue,white);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.partfolio2{
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    
+}
+.buttons{
+  display: flex;
+
+
+}
+h5{
+     font-family: 'Castellar';
+     font-size: 10px;
+     margin: 0px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(255, 0, 187);
+}
+.home{
+  width: 120px;
+  height: 30px;
+  border: 1px solid white;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+ border-top-left-radius: 10px;
+  font-family: 'Castellar';
+}
+.home:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 10px rgb(234, 234, 234) ;
+  transition: 400ms;
+  cursor: pointer;
+  color: white;
+}
+.about{
+  width: 120px;
+  height: 30px;
+  border: 1px solid white;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+ border-top-left-radius: 10px;
+  font-family: 'Castellar';
+}
+.about:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 10px rgb(234, 234, 234) ;
+  transition: 400ms;
+  cursor: pointer;
+  color: white;
+}
+.contact{
+  width: 120px;
+  height: 30px;
+  border: 1px solid white;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+ border-top-left-radius: 10px;
+}
+.contact:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 10px rgb(234, 234, 234) ;
+  transition: 400ms;
+  cursor: pointer;
+  color: white;
+}
+.email{
+  width: 120px;
+  height: 30px;
+  border: 1px solid white;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+ border-top-left-radius: 10px;
+}
+.email:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 10px rgb(234, 234, 234) ;
+  transition: 400ms;
+  cursor: pointer;
+  color: white;
+}
+.profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 3px solid white;
+    background-color: red;
+    position: absolute;
+    right: 20px;
+    background-image: url(./Изображение\ WhatsApp\ 2023-11-28\ в\ 10.22.34_191a5de3.jpg);
+    background-size: cover;
+}
+.message{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    right: 100px;
+}
+.message:hover{
+     cursor: pointer;
+     transform: scale(1.05);
+     transition: 500ms;
+}
+.uvedom{
+    position: absolute;
+    right: 150px;
+    color: white;
+    font-size: 30px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --primary-color: #625BFE;
+    --primary-color-dark: #7771F6;    
+    --button-color: #5433FF;
+    --button-color-shadow: #5433FF30;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish;
+}
+
+.background {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    opacity: 0.5;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--primary-color);
+    width: 18rem;
+    padding: 1.8rem 0.85rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.5s ease-in-out;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sidebar-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.bi-apple{
+  font-size: 50px;
+}
+
+.sidebar-top .logo {
+  position: relative;
+  width: 54px;
+  margin-right: 1.45rem;
+  left: -1px;
+}
+
+.sidebar-top h2 {
+  padding-left: 0.5rem;
+  font-weight: 600;
+  width: 40px;
+  height: 40px;
+ 
+}
+
+.expand-btn {
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background-color: var(--button-color);
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px -3px var(--button-color-shadow);
+  right: -3rem;
+  transform: translateY(-50%) translateX(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+
+nav:hover .expand-btn,
+.expand-btn.hovered {
+  transform: translateY(-50%) translateX(0px);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.sidebar-links ul {
+  list-style-type: none;
+  position: relative;
+  
+ 
+}
+ol, ul {
+    padding-left: 0px;
+}
+.sidebar-links li {
+  position: relative;
+}
+
+.sidebar-links li a {
+  padding: 12px;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon img {
+  width: 26px;
+  height: 26px;
+  margin: auto;
+}
+
+.sidebar-links .link {
+  margin-left: 40px;
+}
+
+.sidebar-links .active {
+  width: 100%;
+  text-decoration: none;
+  background-color: var(--primary-color-dark);
+  transition: all 100ms ease-in;
+  border-radius: 10px;
+}
+
+body.collapsed nav {
+  width: 80px;
+}
+
+body.collapsed .hide {
+  opacity: 0;
+  position: relative;
+  left: 40px;
+  pointer-events: none;
+  transition-delay: 0s;
+}
+
+body.collapsed .expand-btn img {
+  transform: rotate(-180deg);
+}
+.my-blog{
+  width: 500px;
+  position: relative;
+  right: -300px;
+  top: -500px;
+}
+.my-img{
+  background-image: url(./Изображение_WhatsApp_2023-12-01_в_12.29.18_caa9350b-removebg-preview.png);
+  width: 500px;
+  background-size: cover;
+  height: 900px;
+  position: relative;
+  right: -700px;
+  top: -500px;
+  border-bottom: 10px solid rgb(126, 0, 0);
+}
+.txt{
+  font-family: 'Times New Roman';
+  color: rgb(43, 49, 222)55)
+
+}
+.txth1{
+  font-family: 'Times New Roman';
+  position: relative;
+  right: -200px;
+  top: -50px;
+  color: white;
+
+
+}
+.txth3{
+  font-family: 'Times New Roman';
+  position: relative;
+  left: 200px;
+  color: white;
+  top: 100px;
+}
